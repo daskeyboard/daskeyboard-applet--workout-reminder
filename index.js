@@ -56,6 +56,12 @@ class WorkOut extends q.DesktopApp {
       if (userChoosenValue == random) {
         var FunctionResult = random_items(this.chosenExercice);
       } else {
+
+        console.log("=============================");
+        console.log("valeur de user choosen value ", this.userChoosenValue);
+        console.log("============================");
+
+
         var FunctionResult = this.chosenExercice.sort();
       }
 
