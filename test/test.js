@@ -7,19 +7,18 @@ describe('WorkOut', () => {
   
   describe('#run()', () => {
 
-    it('should blink in green at the moment desired', async function () {
-      // build the app and configure it to trigger every hour at :55
+    it('should build the app and configure it to trigger every hour at :55', async function () {
       const config = {
         applet: {
           user: {
             minuteAfterTheHour: 55,
             Pushups: true,
-            userChoosenValue: "sequential"
+            userChoosenValue: "One by one in order"
           }
         }
       }
       return buildAppWithConfig(config).then(app => {
-        // Simulate that this test runs at 13:55
+        // Simulate that this test runs at 14:55
         app.getCurrentHour = function () {
           return 14;
         }
@@ -31,7 +30,7 @@ describe('WorkOut', () => {
           // assert signal received
           assert.ok(signal);
           // assert color of first point is green
-          assert.equal(signal.points[0][0].color,'#19FF00');
+          assert.equal(signal.points[0][0].color,'#0000FF');
           // assert blinking
           assert.equal(signal.points[0][0].effect,daskeyboardModule.Effects.BLINK);
           
