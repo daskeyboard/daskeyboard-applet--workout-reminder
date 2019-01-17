@@ -54,25 +54,8 @@
             "value": " :00"
           },
           {
-            "key": 1,
-            "value": " :01"
-          },
-          {
-            "key": 2,
-            "value": " :02"
-          },
-          {
-            "key": 3,
-            "value": " :03"
-          },
-          {
             "key": 5,
             "value": " :05"
-          },
-
-          {
-            "key": 8,
-            "value": ":08"
           },
           {
             "key": 10,
@@ -83,84 +66,36 @@
             "value": ":15"
           },
           {
-            "key": 17,
-            "value": ":17"
-          },
-          {
-            "key": 22,
-            "value": ":22"
-          },
-          {
-            "key": 23,
-            "value": ":23"
+            "key": 20,
+            "value": ":20"
           },
           {
             "key": 25,
             "value": ":25"
           },
           {
-            "key": 26,
-            "value": ":26"
-          },
-          {
-            "key": 28,
-            "value": ":28"
-          },
-          {
-            "key": 29,
-            "value": ":29"
-          },
-          {
             "key": 30,
             "value": ":30"
           },
           {
-            "key": 34,
-            "value": ":34"
-          },
-          {
-            "key": 36,
-            "value": ":36"
-          },
-          {
-            "key": 38,
-            "value": ":38"
+            "key": 35,
+            "value": ":35"
           },
           {
             "key": 40,
             "value": ":40"
           },
           {
-            "key": 41,
-            "value": ":41"
-          },
-          {
-            "key": 48,
-            "value": ":48"
+            "key": 45,
+            "value": ":45"
           },
           {
             "key": 50,
             "value": ":50"
           },
           {
-            "key": 51,
-            "value": ":51"
-          },
-          {
-            "key": 52,
-            "value": ":52"
-          },
-          {
             "key": 55,
             "value": ":55"
-          },
-          {
-            "key": 52,
-            "value": ":52"
-          },
-          {
-            "key": 58,
-            "value": ":58"
           }
         ]
       },
@@ -194,8 +129,8 @@
         "controlType": "checkbox"
       },
       {
-        "key": "Montain Climber",
-        "label": "Montain Climber",
+        "key": "Mountain Climber",
+        "label": "Mountain Climber",
         "order": 6,
         "required": false,
         "controlType": "checkbox"
