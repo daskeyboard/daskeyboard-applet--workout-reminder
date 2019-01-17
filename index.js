@@ -3,7 +3,7 @@ const logger = q.logger; // to access to the logger
 const moment = require('moment');
 
 
-const listofexercices = ['Pushups', 'Squats', 'Front Lunges', 'Spider Crowl', 'High Knees', 'Montain Climber', 'Plank', 'Plank Jacks', 'Jumping Jacks', 'Chair', 'Crunches', 'Legs Drop'];
+const listofexercices = ['Pushups', 'Squats', 'Front Lunges', 'Spider Crowl', 'High Knees', 'Mountain Climber', 'Plank', 'Plank Jacks', 'Jumping Jacks', 'Chair', 'Crunches', 'Legs Drop'];
 
 //random function 
 function random_items(listofexercices) {
