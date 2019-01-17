@@ -1,13 +1,15 @@
 # Q Applet: Workout Reminder
 
-This is an applet for anybody who has ever found it difficult to fit exercise into their busy schedule. The Workout Reminder is a quick, easy, and convenient way to set up reminder notifications that will alert you with a blinking key of your choice. Customize your workout schedule by easily choosing exercise that you want to perform from the list of 12.
-The applet choses a workout at random or displays all the different exercises you have chosen.
+Do you find yourself sitting at your desk for long periods of time?
+This applet is for people who find it difficult to fit exercise into their busy schedule. The `Workout Reminder` applet allows to set up reminders to start working out every hours during the workday.
+
+Workout routine can be customized by choosing from a list of 12 exercises.
 
 [GitHub repository](https://github.com/daskeyboard/daskeyboard-applet--stand-up-reminder)
 
 ## Example
 
-The "P" key will blink green every hour and :10 minutes to remind you to move.
+The "P" key will blink green every hour and :10 minutes to remind you start the workout routine.
 
 ![Workout Reminder on a Das Keybaord Q]("Workout Reminder result")
 
@@ -32,7 +34,7 @@ Pull requests welcome.
 
 ## Copyright / License
 
-Copyright 2014 - 2018 Das Keyboard / Metadot Corp.
+Copyright 2014 - 2019 Das Keyboard / Metadot Corp.
 
 Licensed under the GNU General Public License Version 2.0 (or later);
 you may not use this work except in compliance with the License.

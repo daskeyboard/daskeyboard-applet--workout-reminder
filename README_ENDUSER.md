@@ -1,7 +1,8 @@
 # Pushup Reminder
 
-Do you find yourself sitting at your desk for long periods?
-This is an applet for anybody who has ever found it difficult to fit exercise into their busy schedule. The Workout Reminder is a quick, easy, and convenient way to set up reminder notifications that will alert you with a blinking key of your choice. Customize your workout schedule by easily choosing exercise that you want to perform from the list of 12.
-The applet choses a workout at random or displays all the different exercises you have chosen.
+Do you find yourself sitting at your desk for long periods of time?
+This applet is for people who find it difficult to fit exercise into their busy schedule. The `Workout Reminder` applet allows to set up reminders to start working out every hours during the workday.
+
+Workout routine can be customized by choosing from a list of 12 exercises.
 
 ![Pushup Reminder on a Das Keybaord Q](assets/image.png "Pushup Reminder config and result")
