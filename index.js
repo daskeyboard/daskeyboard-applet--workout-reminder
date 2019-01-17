@@ -3,7 +3,7 @@ const logger = q.logger; // to access to the logger
 const moment = require('moment');
 
 
-const listofexercices = ['Pushups', 'Squats', 'Front Lunges', 'Spider Crowl', 'High Knees', 'Mountain Climber', 'Plank', 'Plank Jacks', 'Jumping Jacks', 'Chair', 'Crunches', 'Legs Drop'];
+const listofexercices = ['Pushups', 'Squats', 'Front Lunges', 'Spider Crawl', 'High Knees', 'Mountain Climber', 'Plank', 'Plank Jacks', 'Jumping Jacks', 'Chair', 'Crunches', 'Legs Drop'];
 
 //random function 
 function random_items(listofexercices) {
@@ -56,13 +56,13 @@ class WorkOut extends q.DesktopApp {
       if (userChoosenValue == random) {
         var FunctionResult = random_items(this.chosenExercice);
       } else {
-        var FunctionResult = this.chosenExercice.join(", ");
+        var FunctionResult = this.chosenExercice.sort();
       }
 
       this.LastHourofNotification = currentHour;
 
       logger.info("Workout Reminder, time to Workout.");
-      const color = '#19FF00'; //green color
+      const color = '#0000FF'; //green color
 
       return new q.Signal({
         points: [
