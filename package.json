@@ -43,7 +43,7 @@
     },
     "questions": [{
         "key": "minuteAfterTheHour",
-        "label": "Choose how many minutes past the hour this applet should go off and the different exercises",
+        "label": "Choose how many minutes past the hour this applet should go off and with which exercises to pick from.",
         "help": "",
         "required": true,
         "order": 1,

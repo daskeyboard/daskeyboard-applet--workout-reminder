@@ -11,16 +11,6 @@ function random_items(listofexercices) {
 }
 
 
-//One by one in order function
-function order_items(listofexercices){ 
-  var resultat ='';  
-  for (i =0; i< listofexercices.length; i++){
-    resultat += listofexercices[i];
-    return resultat
-  }
-  
-}
-
 
 
 class WorkOut extends q.DesktopApp {
@@ -30,6 +20,7 @@ class WorkOut extends q.DesktopApp {
     super();
     this.pollingInterval = 1000;
     this.LastHourofNotification = '';
+    this.lastExerciseIndex = 0;
     logger.info("PushUpReminder, WorkOut Reminder ready to go!");
   }
 
@@ -50,9 +41,25 @@ class WorkOut extends q.DesktopApp {
   getCurrentMinute() {
     return moment().minute();
   }
+
+  getExercerciseCurrent(){
+    return this.chosenExercice[this.lastExerciseIndex];
+
+  }
+
+  prepareNextExercise(){
+    logger.info(`Preparing next exercice, current is ${this.chosenExercice[this.lastExerciseIndex]}`);
+    if (this.lastExerciseIndex >= this.chosenExercice.length -1 ){
+      this.lastExerciseIndex = 0;
+    }
+    else
+    {   
+       this.lastExerciseIndex+=1;
+    }
+    logger.info(`Next one will be ${this.chosenExercice[this.lastExerciseIndex]}`);
+  }
   
   async run() {
-
     const userChoosenValue = this.config.userChoosenValue;
     const random = "random";
     const minuteAfterTheHour = this.config.minuteAfterTheHour;
@@ -63,63 +70,26 @@ class WorkOut extends q.DesktopApp {
     const currentMinute = this.getCurrentMinute();
 
     if ((currentMinute >= integer) && (this.LastHourofNotification != currentHour)) {
+      logger.info(`Time to do some exercice`);
+      logger.info(`User chose to select exercice ${userChoosenValue}`);
 
-
-
-      console.log("================================");
-      console.log("chosenExercice avant la boucle else if", this.chosenExercice);
-      console.log("================================");
-      
-      console.log("================================");
-      console.log("valeur current hour", currentHour);
-      console.log("valeur current minute", currentMinute);
-      console.log("valeur integer", integer);
-      console.log("valeur last hour before notification", this.LastHourofNotification);
-      console.log("================================");
-      console.log("================================");
-
-
-
-
+      let currentExercise;
       if (userChoosenValue == random) {
 
-
-
-
-        var FunctionResult = random_items(this.chosenExercice);
-      
-      
-      
+        currentExercise = random_items(this.chosenExercice);
       
       } else {
-
         
+          // get the current exercise to perform
+         currentExercise = this.getExercerciseCurrent();
+         
+         // prepare the next exercise
+         this.prepareNextExercise();
 
-        console.log("************************************");
-        console.log("valeur de user choosen value", userChoosenValue)
-        console.log("************************************");
-
-
-         var FunctionResult = order_items(this.chosenExercice);
-        
-
-
-        console.log("************************************");
-        console.log("valeur de fonction resultat apres la fonction", FunctionResult);
-        console.log("************************************");
-        console.log("************************************");
-      
       } 
       
-      
       this.LastHourofNotification = currentHour;
-      console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-      console.log("valeur de last hour ", this.LastHourofNotification);
-      console.log("valeur de current hour ", currentHour);
-
-      console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-
-
+    
       logger.info("Workout Reminder, time to Workout.");
       const color = '#0000FF'; //green color
 
@@ -128,7 +98,7 @@ class WorkOut extends q.DesktopApp {
           [new q.Point(color, q.Effects.BLINK)]
         ],
         name: 'Workout Reminder',
-        message: FunctionResult
+        message: currentExercise
 
       });
 
@@ -140,8 +110,8 @@ class WorkOut extends q.DesktopApp {
 
 module.exports = {
   WorkOut: WorkOut,
-  random_items: random_items,
-  order_items: order_items
+  random_items: random_items
+  
 }
 
 const applet = new WorkOut();
