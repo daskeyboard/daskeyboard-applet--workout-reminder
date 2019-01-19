@@ -15,7 +15,6 @@ function random_items(listofexercices) {
 
 class WorkOut extends q.DesktopApp {
 
-
   constructor() {
     super();
     this.pollingInterval = 1000;
