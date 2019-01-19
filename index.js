@@ -90,7 +90,7 @@ class WorkOut extends q.DesktopApp {
       this.LastHourofNotification = currentHour;
     
       logger.info("Workout Reminder, time to Workout.");
-      const color = '#00BFFF';
+      const color = '#0000FF';
 
       return new q.Signal({
         points: [

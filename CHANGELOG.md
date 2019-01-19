@@ -1,5 +1,5 @@
-# Changelog Q Applet Stock Quote
+# Changelog Q Applet Workout Reminder
 
-## Version 1.0.0 - October 30, 2018
+## Version 1.0.0 - January 18, 2019
 
-First release, tests are not finished.
+First release

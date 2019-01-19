@@ -24,7 +24,7 @@ the Q Desktop application (https://www.daskeyboard.com/q)
 
 ## Running tests
 
-The test.js file is not finished.
+ `yarn test`
 
 ## Contributions
 
