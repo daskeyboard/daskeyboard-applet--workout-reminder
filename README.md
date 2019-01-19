@@ -9,7 +9,7 @@ Workout routine can be customized by choosing from a list of 12 exercises.
 
 The "P" key will blink green every hour and :10 minutes to remind you start the workout routine.
 
-![Workout Reminder on a Das Keybaord Q](assets/image.png"Das Keyboard Workout Reminder applet")
+![Workout Reminder on a Das Keybaord Q](assets/image.png "Das Keyboard Workout Reminder applet")
 
 ## Changelog
 
