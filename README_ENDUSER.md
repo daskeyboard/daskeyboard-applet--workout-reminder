@@ -5,4 +5,4 @@ This applet is for people who find it difficult to fit exercise into their busy 
 
 Workout routine can be customized by choosing from a list of 12 exercises.
 
-![Pushup Reminder on a Das Keybaord Q](assets/image.png "Pushup Reminder config and result")
+![Workout Reminder on a Das Keybaord Q](assets/image.png "Das Keyboard Workout Reminder applet")
