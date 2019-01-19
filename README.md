@@ -5,13 +5,11 @@ This applet is for people who find it difficult to fit exercise into their busy 
 
 Workout routine can be customized by choosing from a list of 12 exercises.
 
-[GitHub repository](https://github.com/daskeyboard/daskeyboard-applet--workout-reminder)
-
 ## Example
 
 The "P" key will blink green every hour and :10 minutes to remind you start the workout routine.
 
-![Workout Reminder on a Das Keybaord Q](assets/image.png"Workout Reminder result")
+![Workout Reminder on a Das Keybaord Q](assets/image.png"Das Keyboard Workout Reminder applet")
 
 ## Changelog
 
